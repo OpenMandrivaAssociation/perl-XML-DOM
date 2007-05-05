@@ -3,7 +3,7 @@
 Summary:	XML::DOM - build DOM Level 1 compliant document structures
 Name:		perl-%{real_name}
 Version:	1.44
-Release: %mkrel 2
+Release: %mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
@@ -33,6 +33,7 @@ on the libgdome C library.
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
+%check
 # some old'ish utf8 stuff, nuke it (rgs)
 rm -f t/dom_jp_attr.t
 rm -f t/dom_jp_cdata.t
