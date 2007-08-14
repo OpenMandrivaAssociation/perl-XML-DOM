@@ -3,7 +3,7 @@
 Summary:	XML::DOM - build DOM Level 1 compliant document structures
 Name:		perl-%{real_name}
 Version:	1.44
-Release: %mkrel 3
+Release:	%mkrel 4
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
@@ -59,4 +59,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/XML/DOM/*.pm
 %{perl_vendorlib}/XML/Handler/*
 %{_mandir}/man3/*
-
