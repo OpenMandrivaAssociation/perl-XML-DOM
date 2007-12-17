@@ -16,7 +16,6 @@ BuildRequires:	perl-libxml-perl >= 0.07
 BuildArch:	noarch
 Provides:	perl-libxml-enno
 Obsoletes:	perl-libxml-enno
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is a Perl extension to XML::Parser. It adds a new 'Style' to
