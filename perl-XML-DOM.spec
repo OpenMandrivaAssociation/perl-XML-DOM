@@ -3,7 +3,7 @@
 Summary:	XML::DOM - build DOM Level 1 compliant document structures
 Name:		perl-%{real_name}
 Version:	1.44
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
