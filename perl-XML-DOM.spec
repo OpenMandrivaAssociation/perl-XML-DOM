@@ -1,14 +1,16 @@
-%define real_name XML-DOM
+%define upstream_name    XML-DOM
+%define upstream_version 1.44
+
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 
 Summary:	XML::DOM - build DOM Level 1 compliant document structures
-Name:		perl-%{real_name}
-Version:	1.44
-Release:	%mkrel 7
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{real_name}-%{version}.tar.bz2
-BuildRequires:	perl-devel
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-XML-Parser >= 2.30
 BuildRequires:	perl-XML-RegExp
 BuildRequires:	perl-libwww-perl
@@ -16,7 +18,7 @@ BuildRequires:	perl-libxml-perl >= 0.07
 BuildArch:	noarch
 Provides:	perl-libxml-enno
 Obsoletes:	perl-libxml-enno
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This is a Perl extension to XML::Parser. It adds a new 'Style' to
@@ -27,7 +29,7 @@ development and significantly faster than XML::DOM, since it is based
 on the libgdome C library.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
