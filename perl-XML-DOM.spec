@@ -15,6 +15,8 @@ BuildRequires:	perl-XML-Parser >= 2.30
 BuildRequires:	perl-XML-RegExp
 BuildRequires:	perl-libwww-perl
 BuildRequires:	perl-libxml-perl >= 0.07
+BuildRequires:	perl(Test)
+BuildRequires:	perl(Test::More)
 Provides:	perl-libxml-enno = %{version}-%{release}
 
 %description
