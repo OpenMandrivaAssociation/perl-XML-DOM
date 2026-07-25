@@ -3,12 +3,12 @@
 
 Summary:	XML::DOM - build DOM Level 1 compliant document structures
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	%{modver}
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{modname}-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/XML-DOM
+Source0:	https://cpan.metacpan.org/authors/id/T/TJ/TJMATHER/XML-DOM-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
